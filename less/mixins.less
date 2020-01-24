@@ -1,1 +1,27 @@
 // Mixins Here
+@font:'Nova Cut', cursive;
+@buttonpad: 10px 24px;
+@buttoncolor:white;
+.practice{
+    font-family: @font;
+    font-size: 150%;
+}
+
+.visit-planets{
+    .practice();
+    color: black;
+}
+.walk-text{
+    .visit-planets();
+}
+.intro{
+    .visit-planets();
+}
+.practicetwo{
+    padding: @buttonpad;
+    color: @buttoncolor;
+    background-color: black;
+}
+.btn{
+    .practicetwo()
+}
