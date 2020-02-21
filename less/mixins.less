@@ -1,7 +1,6 @@
 // Mixins Here
 @font:'Nova Cut', cursive;
 @buttonpad: 10px 24px;
-@buttoncolor:white;
 @phone: ~'(max-width: 500px)';
 .practice{
     font-family: @font;
@@ -17,4 +16,13 @@
 }
 .intro{
     .visit-planets();
+}
+.button-mixin(@background, @color){
+    background-color: @background;
+    color: @color;
+}
+.nav-mixin(@fontsize, @color, @decoration){
+    font-size: @fontsize;
+    color:@color;
+    text-decoration: @decoration;
 }

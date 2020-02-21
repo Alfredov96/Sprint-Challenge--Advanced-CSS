@@ -1,20 +1,37 @@
 // Navigation code here
 .navigation{
-    border:1px solid red;
-    background-color: #8787e0;
+    @media @phone{
+        background-color: #b4b4f5;
+        text-align: center; 
+    }
+    background-color: #b4b4f5;
     text-align: center;
 }
     .spacewalker{
-        font-size: 160%;
-        margin:3% 0;
+        @media @phone{
+            font-size: 400%;
+            margin-top:3%;
+        }
+        font-size: 400%;
+        margin-top:3%;
     }
     nav{
+        @media @phone{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2%;
+            padding-top: 2%;   
+        }
         display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
     }
     a{
-        text-decoration: none;
-        color: black;
+        @media @phone{
+            margin:0% 3%;
+            .nav-mixin(200%, black, none)  
+        }
         margin:0% 3%;
+        .nav-mixin(200%, black, none)
     }
