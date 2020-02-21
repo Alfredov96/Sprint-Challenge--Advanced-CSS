@@ -58,7 +58,18 @@
         margin-top:5%;
       }
 
-      .btn {
+    }
+    button{
+      border-radius: 8px; 
+      width: 35%;
+      padding:5%;
+      background-color: grey;
+      color:white;
+      font-size: 130%;
+
+      &:hover{
+        background-color:purple;
+        color: yellow;
       }
     }
 
@@ -73,4 +84,50 @@
       }
     }
   }
-}// home
+}
+// home
+@media(max-width: 500px){
+  header{
+
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .home{
+    max-width: 100%;
+  .space-images{
+    display: flex;
+    justify-content: center;
+    img{
+      width:80%;
+    }
+    .sky{
+      display: none;
+    }
+    .launch{
+      display: none;
+    }
+  }
+ 
+ .walk{
+   display: flex;
+   flex-direction: column-reverse;
+ .walk-img{
+   width: 100%;
+   margin-left: 0%;
+   margin-bottom: 3%;
+  } 
+  .walk-text{
+    width:100%;
+  }
+  button{
+    width:100%;
+    &:hover{
+      background-color: purple;
+      color:yellow;
+    }
+  }
+  }
+  }
+}

@@ -17,16 +17,6 @@
   font-size: 150%;
   color: black;
 }
-.practicetwo {
-  padding: 10px 24px;
-  color: white;
-  background-color: black;
-}
-.btn {
-  padding: 10px 24px;
-  color: white;
-  background-color: black;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -190,8 +180,23 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  border: 2px solid red;
+  border: 1px solid red;
+  background-color: #8787e0;
   text-align: center;
+}
+.spacewalker {
+  font-size: 160%;
+  margin: 3% 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0% 3%;
 }
 footer {
   color: #22283B;
@@ -244,6 +249,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+  margin-top: 5%;
+}
+.home .walk button {
+  border-radius: 8px;
+  width: 35%;
+  padding: 5%;
+  background-color: grey;
+  color: white;
+  font-size: 130%;
+}
+.home .walk button:hover {
+  background-color: purple;
+  color: yellow;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -253,6 +271,46 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  header img {
+    max-width: 100%;
+  }
+  .home {
+    max-width: 100%;
+  }
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+  }
+  .home .space-images img {
+    width: 80%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 3%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk button {
+    width: 100%;
+  }
+  .home .walk button:hover {
+    background-color: purple;
+    color: yellow;
+  }
 }
 @font-face {
   font-family: 'Nova Cut';
